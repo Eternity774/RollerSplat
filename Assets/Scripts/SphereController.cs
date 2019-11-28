@@ -34,25 +34,25 @@ public class SphereController : MonoBehaviour
                 }
             case MoveDirection.Up:
                 {
-                    rb.velocity = Vector3.forward * speed;
+                    rb.velocity = Vector3.forward * speed * Time.deltaTime;
                     //transform.Translate(transform.forward * Time.deltaTime * speed);
                     break;
                 }
             case MoveDirection.Down:
                 {
-                    rb.velocity = Vector3.back * speed;
+                    rb.velocity = Vector3.back * speed * Time.deltaTime;
                     //transform.Translate(-transform.forward * Time.deltaTime * speed);
                     break;
                 }
             case MoveDirection.Right:
                 {
-                    rb.velocity = Vector3.right * speed;
+                    rb.velocity = Vector3.right * speed * Time.deltaTime;
                     //transform.Translate(transform.right * Time.deltaTime * speed);
                     break;
                 }
             case MoveDirection.Left:
                 {
-                    rb.velocity = Vector3.left * speed;
+                    rb.velocity = Vector3.left * speed * Time.deltaTime;
                     //transform.Translate(-transform.right * Time.deltaTime * speed);
                     break;
                 }
